@@ -3,12 +3,14 @@ from BasicSetting.object_setting import *
 from BasicSetting.conftest import *
 import pyperclip
 
+
+@pytest.mark.test01
 def test_case_001(driver, worksheet):
     print("\ntest_case_001 : summary", end='')
     result = LobbyGuestElements.lobby_guest_allow_text(driver, worksheet).text
     assert result == 'sample_text'
     time.sleep(1)
-
+    
 def test_case_002(driver0, worksheet):
     print("\ntest_case_002 : summary", end='')
     result = driver0.find_element(By.CSS_SELECTOR, 'button[data-tooltip]').get_attribute('data-tooltip')
