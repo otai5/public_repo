@@ -7,7 +7,7 @@ App(Android만 대표로 작성) / Web 환경에서의 **로그인 → 메인 �
 
 ## 주요 특징
 
-### 🧩 POM(Page Object Model) 구조 설계
+### POM(Page Object Model) 구조
 - 각 페이지별 UI 요소 및 액션을 별도 클래스로 분리
 - 코드 중복 제거 및 유지보수성 향상
 - 테스트 코드에서 객체 재사용 가능
